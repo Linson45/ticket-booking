@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "dbeffa86-24d5-4fa8-be58-f83a5b723eab",
+		"_postman_id": "1b59d5c3-fef7-472d-a22c-2c35e989d15f",
 		"name": "ticket-booking-api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -111,6 +111,46 @@
 					"port": "3000",
 					"path": [
 						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user booking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJjYmM1MTAwYzEzMjM1YmMxZTU4MjYiLCJpYXQiOjE2MjI5ODQ1NzB9.kR8Sqr_r4uAkpFhEStjYmyMmLxeJEmU_Jov6RaVtYPU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user-booking",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user-booking"
 					]
 				}
 			},
